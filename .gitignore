@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Build and tool output
+dist/
+.vite/
+coverage/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editors and operating systems
+.idea/
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+Thumbs.db
+
+# Local certificates and secrets
+*.local
+*.pem

@@ -1,0 +1,18 @@
+:root {
+  /* Bootstrap-only neutrals. Replace from approved Figma variables. */
+  --color-bg: #f4f4f2;
+  --color-surface: #ffffff;
+  --color-text: #1d1d1b;
+  --color-text-muted: #5f5f5a;
+  --color-border: #d9d9d4;
+  --color-focus: #3157a4;
+
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: clamp(1.5rem, 5vw, 3rem);
+  --page-padding: clamp(1rem, 4vw, 3rem);
+
+  --radius-md: 0.75rem;
+}

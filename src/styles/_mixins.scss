@@ -1,0 +1,10 @@
+@mixin focus-ring {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+}
+
+@mixin reduced-motion {
+  @media (prefers-reduced-motion: reduce) {
+    @content;
+  }
+}
