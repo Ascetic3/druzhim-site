@@ -202,8 +202,7 @@
   position: absolute;
   inset: 0;
 }
-.activityLines,
-.directorLines {
+.activityLines {
   position: absolute;
   left: calc((100% - 100vw) / 2);
   width: 100vw;
@@ -301,7 +300,7 @@
 }
 
 .mission {
-  height: 676px;
+  height: 576px;
 }
 .missionLabel {
   position: absolute;
@@ -321,7 +320,7 @@
 }
 .missionCopy {
   position: absolute;
-  top: 430px;
+  top: 386px;
   left: 664px;
   width: 616px;
   font-size: 1.25rem;
@@ -329,20 +328,23 @@
 }
 
 .director {
-  height: 720px;
+  height: 640px;
 }
 .portrait {
   position: absolute;
   top: 80px;
   left: 0;
-  display: grid;
-  width: 420px;
-  height: 524px;
-  place-items: center;
+  display: flex;
+  width: 388px;
+  height: 464px;
+  align-items: flex-end;
+  padding: 24px;
+  border: 1px solid var(--color-border);
   background: var(--color-sage);
-  font-size: 1.25rem;
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
   line-height: 1.5;
-  text-align: center;
+  text-align: left;
 }
 .directorLabel {
   position: absolute;
@@ -381,7 +383,7 @@
 }
 
 .results {
-  height: 440px;
+  height: 424px;
 }
 .results .sectionInner {
   border-top: 1px solid var(--color-border);
@@ -430,23 +432,24 @@
 }
 
 .faq {
-  height: 716px;
+  min-height: 608px;
+}
+.faq .sectionInner {
+  display: grid;
+  height: auto;
+  grid-template-columns: minmax(0, 530px) minmax(0, 1fr);
+  column-gap: 54px;
+  padding-block: 80px;
 }
 .faq h2 {
-  position: absolute;
-  top: 80px;
-  left: 0;
-  width: 530px;
+  width: auto;
   font-family: var(--font-display);
   font-size: 3.5rem;
   font-weight: 400;
   line-height: 1.286;
 }
 .faqList {
-  position: absolute;
-  top: 84px;
-  left: 584px;
-  width: 696px;
+  width: auto;
 }
 .faqList details {
   border-top: 1px solid var(--color-border);
@@ -664,6 +667,7 @@ details[open] .faqIcon::after {
   }
   .audienceList {
     position: relative;
+    top: auto;
     margin-top: 56px;
   }
   .audienceList::before {
@@ -723,8 +727,7 @@ details[open] .faqIcon::after {
   .missionLines,
   .contactLines,
   .seasonLines,
-  .activityLines,
-  .directorLines {
+  .activityLines {
     display: none;
   }
   .activityList {
@@ -765,7 +768,7 @@ details[open] .faqIcon::after {
     grid-column: 1;
     grid-row: 1 / span 5;
     width: 100%;
-    height: 524px;
+    height: 464px;
   }
   .directorLabel,
   .director h2,
@@ -793,7 +796,7 @@ details[open] .faqIcon::after {
     font-size: clamp(2.75rem, 5vw, 4rem);
   }
   .resultsNote {
-    margin-top: 48px;
+    margin-top: 32px;
   }
   .faq .sectionInner {
     display: grid;
@@ -833,6 +836,41 @@ details[open] .faqIcon::after {
   }
 }
 
+@media (min-width: 900px) and (max-width: 1199px) {
+  .foster .sectionInner {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    column-gap: 48px;
+    align-content: start;
+  }
+  .fosterLabel,
+  .fosterHeading {
+    grid-column: 1 / -1;
+  }
+  .fosterFigure {
+    grid-column: 1;
+    grid-row: 3 / span 3;
+  }
+  .fosterLead,
+  .fosterCopy,
+  .textLink {
+    grid-column: 2;
+  }
+  .fosterLead {
+    grid-row: 3;
+    margin-top: 48px;
+  }
+  .fosterCopy {
+    grid-row: 4;
+    margin-top: 20px;
+  }
+  .textLink {
+    grid-row: 5;
+    align-self: start;
+    margin-top: 28px;
+  }
+}
+
 @media (max-width: 899px) {
   .audienceRow {
     grid-template-columns: 1fr;
@@ -846,19 +884,23 @@ details[open] .faqIcon::after {
     margin-top: 12px;
   }
   .director .sectionInner {
-    display: block;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr);
+    column-gap: 32px;
   }
   .portrait {
-    width: min(100%, 420px);
+    width: 100%;
+    height: auto;
+    min-height: 400px;
   }
   .directorLabel {
     margin-top: 40px;
   }
   .faq .sectionInner {
     grid-template-columns: 1fr;
+    row-gap: 40px;
   }
   .faqList {
-    margin-top: 48px;
+    margin-top: 0;
   }
   .footer nav {
     flex-wrap: wrap;
@@ -1092,7 +1134,8 @@ details[open] .faqIcon::after {
   }
   .portrait {
     width: 100%;
-    height: 430px;
+    height: 312px;
+    min-height: 0;
   }
   .directorLabel {
     margin-top: 48px;
@@ -1131,26 +1174,25 @@ details[open] .faqIcon::after {
   }
 
   .faq {
-    min-height: 1056px;
+    min-height: 0;
+  }
+  .faq .sectionInner {
+    height: auto;
+    padding-block: 56px;
+    row-gap: 36px;
   }
   .faq h2 {
-    position: absolute;
-    top: 48px;
-    left: 0;
     font-size: 2.125rem;
     line-height: 1.294;
   }
   .faqList {
-    position: absolute;
-    top: 204px;
-    left: 0;
     width: 100%;
     margin: 0;
   }
   .faqList details {
-    min-height: 130px;
+    min-height: 0;
     &:first-child {
-      min-height: 364px;
+      min-height: 0;
     }
     summary {
       min-height: 130px;

@@ -1,13 +1,7 @@
-import { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
 import { Action } from '../components/Action';
 import { activities, audiences, questions } from '../data/home';
 import stillLife from '../assets/images/still-life.webp';
 import styles from './HomeSections.module.scss';
-
-gsap.registerPlugin(ScrollTrigger);
 
 export function Audience() {
   return (
@@ -40,34 +34,8 @@ export function Audience() {
 }
 
 export function FosterFamilies() {
-  const sectionRef = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    const media = gsap.matchMedia();
-    media.add(
-      '(min-width: 900px) and (prefers-reduced-motion: no-preference)',
-      () => {
-        const section = sectionRef.current;
-        const image = section?.querySelector('img');
-        if (!section || !image) return;
-        gsap.fromTo(
-          image,
-          { clipPath: 'inset(0 100% 0 0)' },
-          {
-            clipPath: 'inset(0 0% 0 0)',
-            duration: 0.4,
-            ease: 'power2.out',
-            scrollTrigger: { trigger: section, start: 'top 80%', once: true },
-          },
-        );
-      },
-    );
-    return () => media.revert();
-  }, []);
-
   return (
     <section
-      ref={sectionRef}
       id="families"
       className={styles.foster}
       aria-labelledby="foster-title"
@@ -106,8 +74,7 @@ export function FosterFamilies() {
           preserveAspectRatio="none"
           aria-hidden="true"
         >
-          <path d="M760 790 C940 722 1170 788 1440 700 M1110 774 C1210 774 1290 814 1440 824" />
-          <circle cx="1110" cy="774" r="4" />
+          <path d="M760 790 C940 730 1170 788 1440 720" />
         </svg>
       </div>
     </section>
@@ -132,7 +99,7 @@ export function Activities() {
           preserveAspectRatio="none"
           aria-hidden="true"
         >
-          <path d="M88 406 C240 390 390 460 536 462 C720 462 778 382 984 382 C1130 382 1250 404 1360 386" />
+          <path d="M88 406 H350 C440 406 450 462 536 462 H750 C870 462 890 382 984 382 H1360" />
         </svg>
         <div className={styles.activityList}>
           {activities.map(({ number, title, copy }) => (
@@ -153,42 +120,8 @@ export function Activities() {
 }
 
 export function Season() {
-  const sectionRef = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    const media = gsap.matchMedia();
-    media.add(
-      '(min-width: 900px) and (prefers-reduced-motion: no-preference)',
-      () => {
-        const section = sectionRef.current;
-        if (!section) return;
-        section
-          .querySelectorAll<SVGPathElement>('svg[data-motion="season"] path')
-          .forEach((path) => {
-            const length = path.getTotalLength();
-            gsap.fromTo(
-              path,
-              { strokeDasharray: length, strokeDashoffset: length },
-              {
-                strokeDashoffset: 0,
-                duration: 0.5,
-                ease: 'power2.out',
-                scrollTrigger: {
-                  trigger: section,
-                  start: 'top 75%',
-                  once: true,
-                },
-              },
-            );
-          });
-      },
-    );
-    return () => media.revert();
-  }, []);
-
   return (
     <section
-      ref={sectionRef}
       id="season"
       className={styles.season}
       aria-labelledby="season-title"
@@ -207,7 +140,6 @@ export function Season() {
         </p>
         <svg
           className={styles.seasonLines}
-          data-motion="season"
           viewBox="0 0 1440 544"
           preserveAspectRatio="none"
           aria-hidden="true"
@@ -255,12 +187,12 @@ export function Mission() {
         </p>
         <svg
           className={styles.missionLines}
-          viewBox="0 0 1440 676"
+          viewBox="0 0 1440 576"
           preserveAspectRatio="none"
           aria-hidden="true"
         >
-          <path d="M0 434 C220 430 248 532 588 532 M0 630 C240 630 250 532 588 532" />
-          <circle cx="588" cy="532" r="4" />
+          <path d="M0 388 C220 388 248 476 588 476 M0 560 C240 560 250 476 588 476" />
+          <circle cx="588" cy="476" r="4" />
         </svg>
       </div>
     </section>
@@ -276,9 +208,7 @@ export function Director() {
     >
       <div className={`container ${styles.sectionInner}`}>
         <div className={styles.portrait}>
-          Портрет руководителя
-          <br />
-          после согласования
+          <span>Портрет руководителя — после согласования</span>
         </div>
         <p className={styles.directorLabel}>Руководитель</p>
         <h2 id="director-title">
@@ -295,14 +225,6 @@ export function Director() {
         <p className={styles.directorNote}>
           Личную историю публикуем только после согласования.
         </p>
-        <svg
-          className={styles.directorLines}
-          viewBox="0 0 1440 720"
-          preserveAspectRatio="none"
-          aria-hidden="true"
-        >
-          <path d="M1170 630 C1290 620 1280 512 1440 492" />
-        </svg>
       </div>
     </section>
   );

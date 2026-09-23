@@ -16,8 +16,8 @@ output from `master`. Vite uses `/druzhim-site/` as its asset base.
 
 - Shared CSS custom properties now use the concept palette, spacing, typography and control values; Literata and Golos Text are self-hosted with licenses.
 - Header, hero, audience, foster families, activities placeholder, second-season CTA, mission, director, results placeholder, FAQ, final CTA and footer are implemented as semantic React sections with SCSS Modules.
-- Responsive layouts have been visually checked in the browser at 1440, 1439, 1280, 1024, 768 and 390 px. The 390 px view follows the seven local mobile compositions/states; intermediate layouts adapt content-first.
-- Desktop hero SVG paths draw once with GSAP. Desktop foster photography reveals once and second-season paths converge on entry with ScrollTrigger. Mobile paths remain static, and reduced motion keeps final geometry visible. Menu and FAQ use short CSS state transitions.
+- A browser correction pass at 1440, 1024, 768 and 390 px removed the Audience/Foster Families collision, gave the 1024 px Foster Families section a balanced two-column layout, and shortened excess space in Mission, Director and Facts. The Activities path now stays clear of its labels. FAQ height follows expanded content at all widths, including 390 px.
+- Desktop hero SVG paths draw once with GSAP. Foster photography and second-season paths remain visible without scroll-triggered reveals so the page does not show blank media or partial line fragments before scrolling. Mobile paths are static; reduced motion keeps the hero geometry visible. Menu and FAQ use short CSS state transitions.
 - Mobile navigation opens and closes with keyboard support and focus return; FAQ uses native `details/summary`. Internal section links work. The final contact control is deliberately disabled until a verified contact channel exists.
 - The illustrative foster-family still life is served as an optimized WebP reference, with a visible provisional caption. No unverified results, contacts, schedule or participation terms were introduced.
 
@@ -35,6 +35,8 @@ output from `master`. Vite uses `/druzhim-site/` as its asset base.
 ## Local concept and implementation
 
 The design boards remain in `design/concept/`. The implementation lives in `src/sections`, `src/components`, `src/data/home.ts`, `src/styles` and `src/assets`. The same Literata/Golos Text typography, paper/forest/clay/sage palette and connecting-line motif are used throughout. The local concept is still provisional rather than formally approved in Figma.
+
+The 2026-09-23 visual correction pass retained the existing copy and section order. The director portrait remains a neutral, labeled placeholder, and the results area still contains only verified provisional statements. Narrow and intermediate layouts simplify decorative paths wherever text needs the space.
 
 ## Incomplete
 

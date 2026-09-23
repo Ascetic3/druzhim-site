@@ -46,10 +46,10 @@ Keep simple motion in component SCSS. Put reusable GSAP setup, ScrollTrigger
 helpers, and cleanup utilities in `src/lib` or focused hooks; keep section-only
 timelines beside their section. Third-party integrations belong in `src/lib`.
 
-The current page uses local effects in Hero and HomeSections for one-time GSAP
-path/photo motion. Each effect cleans up through GSAP context or matchMedia;
-mobile and reduced-motion views remain static. This motion is section-specific,
-so no shared animation infrastructure was added.
+The current page uses a local GSAP effect in Hero for its one-time desktop
+path motion. It cleans up through GSAP context or matchMedia; mobile and
+reduced-motion views remain static. Other section artwork remains static.
+The motion is section-specific, so no shared animation infrastructure was added.
 
 Local `AGENTS.md` files are reserved for future complex sections with durable,
 section-specific invariants; they must not duplicate the root contract.

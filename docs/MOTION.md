@@ -37,8 +37,8 @@ and actions remain visible if animation code does not load. No pinning,
 parallax, or scroll interception is planned.
 
 The one-time hero path sequence is implemented with GSAP on widths at least
-900 px. The foster-family reference image uses a 400 ms reveal and the
-second-season paths use a 500 ms ScrollTrigger entry animation at those widths.
-All three effects are skipped for reduced motion; mobile lines stay static.
-Menu and FAQ state changes use short CSS motion. No pinning, scrubbing,
-parallax or scroll interception was added.
+900 px and is skipped for reduced motion. The foster-family reference image
+and second-season paths are static so they are visible before scrolling and
+cannot pause in a partially drawn state. Mobile lines stay static. Menu and
+FAQ state changes use short CSS motion. No pinning, scrubbing, parallax or
+scroll interception is used.
