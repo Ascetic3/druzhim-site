@@ -1,15 +1,12 @@
 # Motion
 
-Motion should communicate connection, progression, and relationships rather
-than exist as decoration.
+Motion should clarify state changes rather than exist as decoration.
 
 ## Technology choice
 
 - Use CSS transitions and keyframes for simple local state changes.
-- Use GSAP + ScrollTrigger for coordinated timelines, complex scroll
-  storytelling, SVG drawing, and complicated sequencing.
-- Keep SVG path animation accessible and meaningful; never make it the only way
-  information is conveyed.
+- Add a dedicated animation library only if a future interaction requires
+  coordinated motion that CSS cannot express clearly.
 
 ## Rules
 
@@ -21,24 +18,10 @@ than exist as decoration.
 - Register bounded listeners/triggers and clean them up with component lifecycles.
 - Mobile motion may be simplified when density, input, or performance requires it.
 
-## Selected-direction storyboard
+## Current implementation
 
-`design/concept/screens/motion-storyboard.svg` describes the provisional
-«Живая нить» motion. Hero text is accessible immediately; a connecting path
-draws once over roughly 180–900 ms, the meeting node resolves by about 1200 ms,
-and the composition then rests. Foster-family photography may reveal once in
-400 ms; second-season paths may converge once in 500 ms. Menu and FAQ state
-changes are local 160–200 ms transitions. This is a design specification, not
-implemented behavior.
-
-At reduced motion, paths and nodes appear in their final state with no masks,
-movement or scroll-linked effects. Mobile uses a static connecting line. Text
-and actions remain visible if animation code does not load. No pinning,
-parallax, or scroll interception is planned.
-
-The one-time hero path sequence is implemented with GSAP on widths at least
-900 px and is skipped for reduced motion. The foster-family reference image
-and second-season paths are static so they are visible before scrolling and
-cannot pause in a partially drawn state. Mobile lines stay static. Menu and
-FAQ state changes use short CSS motion. No pinning, scrubbing, parallax or
-scroll interception is used.
+Menu and FAQ state changes use short CSS transitions. Text, images and actions
+remain visible without animation. The old
+`design/concept/screens/motion-storyboard.svg` records an earlier decorative
+path proposal; none of its path or node animation is implemented. There is no
+GSAP dependency, scroll animation, pinning, parallax or scroll interception.

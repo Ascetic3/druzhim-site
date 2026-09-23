@@ -22,7 +22,6 @@ export function Audience() {
         <div className={styles.audienceList}>
           {audiences.map(({ title, copy }) => (
             <div className={styles.audienceRow} key={title}>
-              <span className={styles.audienceNode} aria-hidden="true" />
               <h3>{title}</h3>
               <p>{copy}</p>
             </div>
@@ -68,14 +67,6 @@ export function FosterFamilies() {
         <a className={styles.textLink} href="#contact">
           Обсудить свою ситуацию
         </a>
-        <svg
-          className={styles.fosterLines}
-          viewBox="0 0 1440 840"
-          preserveAspectRatio="none"
-          aria-hidden="true"
-        >
-          <path d="M760 790 C940 730 1170 788 1440 720" />
-        </svg>
       </div>
     </section>
   );
@@ -93,19 +84,10 @@ export function Activities() {
           Что происходит
           <br />в «ДРУЖИМ»
         </h2>
-        <svg
-          className={styles.activityLines}
-          viewBox="0 0 1440 692"
-          preserveAspectRatio="none"
-          aria-hidden="true"
-        >
-          <path d="M88 406 H350 C440 406 450 462 536 462 H750 C870 462 890 382 984 382 H1360" />
-        </svg>
         <div className={styles.activityList}>
           {activities.map(({ number, title, copy }) => (
             <article className={styles.activity} key={number}>
               <span className={styles.activityNumber}>{number}</span>
-              <span className={styles.activityNode} aria-hidden="true" />
               <h3>{title}</h3>
               <p>{copy}</p>
             </article>
@@ -138,24 +120,6 @@ export function Season() {
         <p className={styles.seasonNote}>
           Возраст, расписание и условия участия уточняются.
         </p>
-        <svg
-          className={styles.seasonLines}
-          viewBox="0 0 1440 544"
-          preserveAspectRatio="none"
-          aria-hidden="true"
-        >
-          <path d="M760 0 C820 40 790 310 930 324 M760 544 C830 470 822 340 930 324 M1110 544 C1030 472 1030 360 930 324 M930 324 H1080" />
-          <circle cx="930" cy="324" r="5" />
-        </svg>
-        <svg
-          className={styles.seasonMobileLines}
-          viewBox="0 0 390 676"
-          preserveAspectRatio="none"
-          aria-hidden="true"
-        >
-          <path d="M0 450 C124 450 130 492 195 492 M390 450 C260 450 260 492 195 492 M195 492 V528" />
-          <circle cx="195" cy="492" r="4" />
-        </svg>
         <Action inverse href="#contact" className={styles.seasonAction}>
           Узнать о группах
         </Action>
@@ -185,15 +149,6 @@ export function Mission() {
           семьи могут раскрывать потенциал и уверенно строить будущее без
           барьеров и стереотипов.
         </p>
-        <svg
-          className={styles.missionLines}
-          viewBox="0 0 1440 576"
-          preserveAspectRatio="none"
-          aria-hidden="true"
-        >
-          <path d="M0 388 C220 388 248 476 588 476 M0 560 C240 560 250 476 588 476" />
-          <circle cx="588" cy="476" r="4" />
-        </svg>
       </div>
     </section>
   );
@@ -306,24 +261,6 @@ export function Contact() {
           Связаться с «ДРУЖИМ»
         </Action>
         <p className={styles.contactNote}>TODO: подтвержденный канал связи</p>
-        <svg
-          className={styles.contactLines}
-          viewBox="0 0 1440 500"
-          preserveAspectRatio="none"
-          aria-hidden="true"
-        >
-          <path d="M1440 0 C1240 200 1220 314 1010 342 M1440 160 C1270 290 1150 338 1010 342 M1440 480 C1260 372 1160 342 1010 342" />
-          <circle cx="1010" cy="342" r="6" />
-        </svg>
-        <svg
-          className={styles.contactMobileLines}
-          viewBox="0 0 390 564"
-          preserveAspectRatio="none"
-          aria-hidden="true"
-        >
-          <path d="M390 296 C274 296 252 328 195 336 M0 296 C112 296 130 334 195 336" />
-          <circle cx="195" cy="336" r="4" />
-        </svg>
       </div>
     </section>
   );

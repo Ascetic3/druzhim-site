@@ -64,4 +64,16 @@ animation.
 **Consequences:** The local SVG boards are a reviewable design handoff while
 Figma canvas transfer is blocked. They do not constitute Figma approval or
 authorization to substitute invented program facts, statistics, contacts or
-photography.
+photography. The motif portion of this decision is superseded below.
+
+## Retire decorative connection artwork from the website
+
+**Decision:** Remove the connection-line motif and its path animation from the
+website while retaining the existing typography, palette, content and section
+order. The older concept boards remain historical references.
+
+**Reason:** The user requested a quieter editorial composition without
+decorative paths, circles or mobile variants.
+
+**Consequences:** Spacing and existing content carry section rhythm. GSAP is no
+longer needed by the runtime; no replacement graphics are introduced.

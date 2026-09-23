@@ -42,14 +42,12 @@ co-located `*.module.scss` files.
 
 ## Motion and integrations
 
-Keep simple motion in component SCSS. Put reusable GSAP setup, ScrollTrigger
-helpers, and cleanup utilities in `src/lib` or focused hooks; keep section-only
-timelines beside their section. Third-party integrations belong in `src/lib`.
+Keep simple state motion in component SCSS. Introduce a dedicated animation
+library only when a future interaction needs it; third-party integrations
+belong in `src/lib`.
 
-The current page uses a local GSAP effect in Hero for its one-time desktop
-path motion. It cleans up through GSAP context or matchMedia; mobile and
-reduced-motion views remain static. Other section artwork remains static.
-The motion is section-specific, so no shared animation infrastructure was added.
+The current page has no decorative SVG or GSAP runtime. Menu and FAQ state
+changes use CSS. No shared animation infrastructure is needed.
 
 Local `AGENTS.md` files are reserved for future complex sections with durable,
 section-specific invariants; they must not duplicate the root contract.

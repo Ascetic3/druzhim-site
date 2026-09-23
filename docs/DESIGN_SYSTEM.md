@@ -9,7 +9,7 @@ The provisional «Живая нить» concept has one design language. It is d
 - Figma collections: `Druzhim / Primitives` (23) and `Druzhim / Concept` (26), with semantic color, spacing, radius and control-size variables. The same concept values are in shared CSS custom properties; reconcile them with the approved Figma values when canvas access returns.
 - Desktop composition: 1440 px, 12 columns, 80 px outer margins, 24 px gutters. The 390 px compositions use four columns, 24 px outer margins and 16 px gutters. Intermediate widths need review during implementation.
 - Controls: 56 px primary buttons, navigation targets at least 48 px, visible 2 px focus treatment with 3 px gap. The states board covers default, hover, pressed, focus and disabled, plus menu/FAQ states.
-- The connecting line and nodes carry the “paths meeting” metaphor. They are decorative: content and links must be understandable without them.
+- The older concept boards show connecting lines and nodes. The website no longer uses that decoration; typography, section rhythm, color fields and spacing carry the editorial composition.
 
 ## Responsive philosophy
 

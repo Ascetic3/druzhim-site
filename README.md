@@ -8,12 +8,12 @@ desktop and mobile design boards are in `design/concept/`; factual content and
 imagery still awaiting approval are labeled on the page and in
 `docs/CONTENT_TODO.md`.
 
-[View the GitHub Pages demo](https://ascetic3.github.io/druzhim-site/).
+[Configured GitHub Pages URL](https://ascetic3.github.io/druzhim-site/).
 
 ## Stack
 
-React, Vite, TypeScript, SCSS Modules, CSS custom-property tokens, and focused
-GSAP/ScrollTrigger motion.
+React, Vite, TypeScript, SCSS Modules and CSS custom-property tokens. Menu and
+FAQ state changes use CSS transitions.
 
 ## Setup and development
 
