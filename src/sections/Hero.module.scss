@@ -1,0 +1,124 @@
+.hero {
+  height: 648px;
+  background: var(--color-bg);
+}
+.inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.heading {
+  position: absolute;
+  top: 48px;
+  left: var(--page-padding);
+  width: calc(100% - var(--page-padding) * 2);
+  font-family: var(--font-display);
+  font-size: clamp(4rem, 6.112vw, 5.5rem);
+  font-weight: 400;
+  line-height: 1.227;
+  text-align: center;
+  span {
+    display: block;
+    white-space: nowrap;
+  }
+  span + span {
+    color: var(--color-accent);
+  }
+}
+.desktopPaths,
+.mobilePath {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  fill: none;
+  pointer-events: none;
+  path {
+    stroke: var(--color-accent);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  circle {
+    fill: var(--color-accent);
+    stroke: var(--color-accent);
+    stroke-width: 2;
+  }
+}
+.mobilePath {
+  display: none;
+}
+.copy {
+  position: absolute;
+  top: 411px;
+  left: 50%;
+  width: min(780px, calc(100% - var(--page-padding) * 2));
+  transform: translateX(-50%);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  text-align: center;
+}
+.action {
+  position: absolute;
+  top: 530px;
+  left: 50%;
+  width: 260px;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 1199px) {
+  .hero {
+    height: 616px;
+  }
+  .heading {
+    font-size: clamp(3.25rem, 6.25vw, 4.5rem);
+  }
+  .copy {
+    top: 390px;
+  }
+  .action {
+    top: 500px;
+  }
+}
+@media (max-width: 899px) {
+  .heading span {
+    white-space: normal;
+  }
+}
+@media (max-width: 599px) {
+  .hero {
+    height: 616px;
+  }
+  .heading {
+    top: 40px;
+    left: var(--page-padding);
+    width: calc(100% - var(--page-padding) * 2);
+    font-size: clamp(2.375rem, 11.282vw, 2.75rem);
+    line-height: 1.273;
+    text-align: left;
+    span {
+      max-width: 342px;
+    }
+  }
+  .desktopPaths {
+    display: none;
+  }
+  .mobilePath {
+    display: block;
+  }
+  .copy {
+    top: 379px;
+    left: var(--page-padding);
+    width: calc(100% - var(--page-padding) * 2);
+    transform: none;
+    font-size: 1.125rem;
+    line-height: 1.556;
+    text-align: left;
+  }
+  .action {
+    top: 558px;
+    left: var(--page-padding);
+    width: calc(100% - var(--page-padding) * 2);
+    transform: none;
+  }
+}

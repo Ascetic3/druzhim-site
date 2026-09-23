@@ -1,0 +1,1282 @@
+.sectionInner {
+  position: relative;
+  height: 100%;
+}
+.mobileOnly {
+  display: none;
+}
+
+.audience {
+  height: 736px;
+}
+.audienceHeading {
+  position: absolute;
+  top: 72px;
+  left: 0;
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+.audienceIntro {
+  position: absolute;
+  top: 80px;
+  left: 848px;
+  width: 432px;
+  font-size: 1.125rem;
+  line-height: 1.556;
+}
+.audienceList {
+  position: absolute;
+  top: 224px;
+  left: 0;
+  right: 0;
+  &::before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    bottom: -6px;
+    left: 24px;
+    width: 1px;
+    background: var(--color-border);
+  }
+}
+.audienceRow {
+  position: relative;
+  height: 112px;
+  &:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: 9px;
+    left: 80px;
+    right: 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+  h3 {
+    position: absolute;
+    top: 0;
+    left: 80px;
+    max-width: 632px;
+    font-family: var(--font-display);
+    font-size: 2.25rem;
+    font-weight: 400;
+    line-height: 1.222;
+  }
+  &:last-child h3 {
+    font-size: 2rem;
+  }
+  p {
+    position: absolute;
+    top: 8px;
+    left: 848px;
+    width: 432px;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+}
+.audienceNode {
+  position: absolute;
+  top: 26px;
+  left: 18px;
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--color-accent);
+  border-radius: 50%;
+  background: var(--color-bg);
+}
+
+.foster {
+  height: 840px;
+  background: var(--color-sage);
+}
+.fosterLabel {
+  position: absolute;
+  top: 64px;
+  left: 0;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.444;
+}
+.fosterHeading {
+  position: absolute;
+  top: 106px;
+  left: 0;
+  font-family: var(--font-display);
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+.fosterFigure {
+  position: absolute;
+  top: 250px;
+  left: 0;
+  width: 704px;
+  margin: 0;
+  img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+  }
+  figcaption {
+    margin-top: 16px;
+    color: var(--color-text-muted);
+    font-size: 0.875rem;
+    line-height: 1.571;
+  }
+}
+.fosterLead {
+  position: absolute;
+  top: 246px;
+  left: 768px;
+  width: 512px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.fosterCopy {
+  position: absolute;
+  top: 432px;
+  left: 768px;
+  width: 512px;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+.textLink {
+  position: absolute;
+  top: 608px;
+  left: 768px;
+  color: var(--color-accent);
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.444;
+  text-underline-offset: 5px;
+  &:hover {
+    text-decoration-thickness: 2px;
+  }
+}
+.fosterLines,
+.missionLines,
+.contactLines,
+.seasonLines {
+  position: absolute;
+  left: calc((100% - 100vw) / 2);
+  width: 100vw;
+  height: 100%;
+  fill: none;
+  pointer-events: none;
+  path {
+    stroke: var(--color-accent);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  circle {
+    fill: var(--color-accent);
+    stroke: var(--color-accent);
+    stroke-width: 2;
+  }
+}
+.seasonLines path,
+.seasonLines circle {
+  stroke: var(--color-bg);
+}
+.seasonLines circle {
+  fill: var(--color-bg);
+}
+.seasonMobileLines {
+  display: none;
+}
+
+.activities {
+  height: 692px;
+}
+.activitiesHeading {
+  position: absolute;
+  top: 64px;
+  left: 0;
+  font-family: var(--font-display);
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.219;
+}
+.activityList {
+  position: absolute;
+  inset: 0;
+}
+.activityLines,
+.directorLines {
+  position: absolute;
+  left: calc((100% - 100vw) / 2);
+  width: 100vw;
+  height: 100%;
+  fill: none;
+  pointer-events: none;
+  path {
+    stroke: var(--color-accent);
+    stroke-width: 2;
+    stroke-linecap: round;
+  }
+}
+.activity {
+  position: absolute;
+  top: 308px;
+  left: 0;
+  width: 380px;
+  &:nth-child(2) {
+    top: 364px;
+    left: 448px;
+  }
+  &:nth-child(3) {
+    top: 284px;
+    left: 896px;
+  }
+  .activityNumber {
+    display: block;
+    color: var(--color-accent);
+    font-family: var(--font-display);
+    font-size: 4rem;
+    line-height: 1.219;
+  }
+  .activityNode {
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 20px 0 12px 3px;
+    border-radius: 50%;
+    background: var(--color-accent);
+  }
+  h3 {
+    font-family: var(--font-display);
+    font-size: 2.25rem;
+    font-weight: 400;
+    line-height: 1.278;
+  }
+  p {
+    margin-top: 16px;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+}
+.activitiesNote {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+.season {
+  height: 544px;
+  background: var(--color-text);
+  color: var(--color-bg);
+}
+.season h2 {
+  position: absolute;
+  top: 62px;
+  left: 0;
+  font-family: var(--font-display);
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.219;
+}
+.seasonLead {
+  position: absolute;
+  top: 256px;
+  left: 0;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.seasonNote {
+  position: absolute;
+  top: 380px;
+  left: 0;
+  font-size: 1.125rem;
+  line-height: 1.556;
+}
+.seasonAction {
+  position: absolute;
+  top: 296px;
+  right: 0;
+  width: 280px;
+  z-index: 1;
+}
+
+.mission {
+  height: 676px;
+}
+.missionLabel {
+  position: absolute;
+  top: 64px;
+  left: 0;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.mission h2 {
+  position: absolute;
+  top: 112px;
+  left: 0;
+  font-family: var(--font-display);
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+.missionCopy {
+  position: absolute;
+  top: 430px;
+  left: 664px;
+  width: 616px;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.director {
+  height: 720px;
+}
+.portrait {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  display: grid;
+  width: 420px;
+  height: 524px;
+  place-items: center;
+  background: var(--color-sage);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  text-align: center;
+}
+.directorLabel {
+  position: absolute;
+  top: 80px;
+  left: 520px;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.director h2 {
+  position: absolute;
+  top: 136px;
+  left: 520px;
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.286;
+}
+.directorLead {
+  position: absolute;
+  top: 340px;
+  left: 520px;
+  font-size: 1.5rem;
+}
+.directorCopy {
+  position: absolute;
+  top: 438px;
+  left: 520px;
+  font-size: 1.25rem;
+}
+.directorNote {
+  position: absolute;
+  top: 540px;
+  left: 520px;
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+.results {
+  height: 440px;
+}
+.results .sectionInner {
+  border-top: 1px solid var(--color-border);
+}
+.results h2 {
+  position: absolute;
+  top: 56px;
+  left: 0;
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.286;
+}
+.facts {
+  position: absolute;
+  top: 178px;
+  left: 0;
+  right: 0;
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 148px;
+  strong {
+    color: var(--color-accent);
+    font-family: var(--font-display);
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 1.25;
+  }
+  > div:nth-child(2) strong {
+    font-size: 3.5rem;
+    line-height: 1.357;
+  }
+  p {
+    max-width: 420px;
+    margin-top: 16px;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+}
+.resultsNote {
+  position: absolute;
+  bottom: 34px;
+  left: 0;
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+.faq {
+  height: 716px;
+}
+.faq h2 {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 530px;
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.286;
+}
+.faqList {
+  position: absolute;
+  top: 84px;
+  left: 584px;
+  width: 696px;
+}
+.faqList details {
+  border-top: 1px solid var(--color-border);
+  &:first-child {
+    border-color: var(--color-accent);
+    border-width: 2px;
+  }
+  summary {
+    position: relative;
+    display: flex;
+    min-height: 98px;
+    align-items: flex-start;
+    padding: 20px 48px 20px 0;
+    font-size: 1.375rem;
+    font-weight: 500;
+    line-height: 1.455;
+    list-style: none;
+    cursor: pointer;
+    &::-webkit-details-marker {
+      display: none;
+    }
+  }
+  &:first-child summary {
+    font-size: 1.5rem;
+  }
+  p {
+    padding: 0 32px 74px 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+}
+.faqIcon {
+  position: absolute;
+  top: 36px;
+  right: 8px;
+  width: 20px;
+  height: 20px;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    background: var(--color-text);
+  }
+  &::before {
+    top: 9px;
+    left: 0;
+    width: 20px;
+    height: 2px;
+  }
+  &::after {
+    top: 0;
+    left: 9px;
+    width: 2px;
+    height: 20px;
+    transition: transform 180ms ease;
+  }
+}
+details[open] .faqIcon::after {
+  transform: rotate(90deg);
+}
+.faqNote {
+  margin-top: 28px;
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+.contact {
+  height: 500px;
+  background: var(--color-sage);
+}
+.contact h2 {
+  position: absolute;
+  top: 48px;
+  left: 0;
+  font-family: var(--font-display);
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 1.222;
+}
+.contact > .sectionInner > p:not(.contactNote) {
+  position: absolute;
+  top: 264px;
+  left: 0;
+  font-size: 1.5rem;
+}
+.contactAction {
+  position: absolute;
+  top: 344px;
+  left: 0;
+  width: 320px;
+  z-index: 1;
+}
+.contactNote {
+  position: absolute;
+  top: 420px;
+  left: 0;
+  color: var(--color-accent);
+  font-size: 0.875rem;
+}
+.contactMobileLines {
+  display: none;
+}
+
+.footer {
+  height: 288px;
+}
+.footerBrand {
+  position: absolute;
+  top: 48px;
+  left: 0;
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  line-height: 1.3;
+  text-decoration: none;
+}
+.organization {
+  position: absolute;
+  top: 122px;
+  left: 0;
+  width: 580px;
+  font-size: 1rem;
+}
+.footer nav {
+  position: absolute;
+  top: 62px;
+  right: 0;
+  display: flex;
+  gap: 28px;
+  a {
+    min-height: 48px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  a:hover {
+    color: var(--color-accent);
+  }
+}
+.footerNote {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  right: 0;
+  padding-top: 24px;
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+@media (max-width: 1199px) {
+  .audience,
+  .foster,
+  .activities,
+  .season,
+  .mission,
+  .director,
+  .results,
+  .faq,
+  .contact,
+  .footer {
+    height: auto;
+  }
+  .sectionInner {
+    height: auto;
+    padding-block: 72px;
+  }
+  .audienceHeading,
+  .audienceIntro,
+  .audienceList,
+  .fosterLabel,
+  .fosterHeading,
+  .fosterFigure,
+  .fosterLead,
+  .fosterCopy,
+  .textLink,
+  .activitiesHeading,
+  .activityList,
+  .activitiesNote,
+  .season h2,
+  .seasonLead,
+  .seasonNote,
+  .seasonAction,
+  .missionLabel,
+  .mission h2,
+  .missionCopy,
+  .portrait,
+  .directorLabel,
+  .director h2,
+  .directorLead,
+  .directorCopy,
+  .directorNote,
+  .results h2,
+  .facts,
+  .resultsNote,
+  .faq h2,
+  .faqList,
+  .contact h2,
+  .contact > .sectionInner > p:not(.contactNote),
+  .contactAction,
+  .contactNote,
+  .footerBrand,
+  .organization,
+  .footer nav,
+  .footerNote {
+    position: static;
+  }
+  .audienceHeading,
+  .results h2,
+  .faq h2 {
+    font-size: clamp(2.75rem, 5vw, 3.5rem);
+  }
+  .audienceIntro {
+    width: min(100%, 650px);
+    margin-top: 24px;
+  }
+  .audienceList {
+    position: relative;
+    margin-top: 56px;
+  }
+  .audienceList::before {
+    top: 0;
+    bottom: 0;
+  }
+  .audienceRow {
+    display: grid;
+    height: auto;
+    min-height: 120px;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr);
+    gap: 28px;
+    padding: 24px 0 24px 80px;
+    h3,
+    p {
+      position: static;
+      width: auto;
+    }
+    h3 {
+      font-size: clamp(1.75rem, 3vw, 2.25rem);
+    }
+    &:last-child h3 {
+      font-size: clamp(1.75rem, 3vw, 2rem);
+    }
+    &:not(:last-child)::after {
+      bottom: 0;
+    }
+  }
+  .audienceNode {
+    top: 32px;
+  }
+  .fosterHeading,
+  .activitiesHeading,
+  .season h2,
+  .mission h2 {
+    margin-top: 32px;
+    font-size: clamp(2.75rem, 5vw, 4rem);
+  }
+  .fosterFigure {
+    width: min(100%, 704px);
+    margin-top: 48px;
+  }
+  .fosterFigure img {
+    height: auto;
+    aspect-ratio: 704 / 420;
+  }
+  .fosterLead,
+  .fosterCopy {
+    width: min(100%, 704px);
+    margin-top: 40px;
+  }
+  .textLink {
+    display: inline-block;
+    margin-top: 48px;
+  }
+  .fosterLines,
+  .missionLines,
+  .contactLines,
+  .seasonLines,
+  .activityLines,
+  .directorLines {
+    display: none;
+  }
+  .activityList {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 32px;
+    margin-top: 56px;
+  }
+  .activity {
+    position: static;
+    width: auto;
+  }
+  .activity h3 {
+    font-size: clamp(1.75rem, 3vw, 2.25rem);
+  }
+  .activitiesNote {
+    margin-top: 48px;
+  }
+  .seasonLead,
+  .seasonNote {
+    margin-top: 40px;
+  }
+  .seasonAction {
+    display: flex;
+    width: 280px;
+    margin-top: 56px;
+  }
+  .missionCopy {
+    width: min(100%, 616px);
+    margin: 56px 0 0 auto;
+  }
+  .director .sectionInner {
+    display: grid;
+    grid-template-columns: 38% 1fr;
+    column-gap: 64px;
+  }
+  .portrait {
+    grid-column: 1;
+    grid-row: 1 / span 5;
+    width: 100%;
+    height: 524px;
+  }
+  .directorLabel,
+  .director h2,
+  .directorLead,
+  .directorCopy,
+  .directorNote {
+    grid-column: 2;
+  }
+  .director h2 {
+    margin-top: 24px;
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+  }
+  .directorLead,
+  .directorCopy,
+  .directorNote {
+    margin-top: 32px;
+  }
+  .facts {
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    margin-top: 48px;
+  }
+  .facts strong,
+  .facts > div:nth-child(2) strong {
+    font-size: clamp(2.75rem, 5vw, 4rem);
+  }
+  .resultsNote {
+    margin-top: 48px;
+  }
+  .faq .sectionInner {
+    display: grid;
+    grid-template-columns: 38% 1fr;
+    column-gap: 48px;
+  }
+  .faq h2 {
+    width: auto;
+  }
+  .faqList {
+    width: auto;
+  }
+  .contact > .sectionInner > p:not(.contactNote) {
+    margin-top: 48px;
+  }
+  .contactAction {
+    margin-top: 48px;
+  }
+  .contactNote {
+    margin-top: 20px;
+  }
+  .footer .sectionInner {
+    display: block;
+  }
+  .organization {
+    width: min(100%, 580px);
+    margin-top: 20px;
+  }
+  .footer nav {
+    display: flex;
+    gap: 28px;
+    justify-content: flex-start;
+    margin-top: 32px;
+  }
+  .footerNote {
+    margin-top: 36px;
+  }
+}
+
+@media (max-width: 899px) {
+  .audienceRow {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .activityList {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .activity .activityNode {
+    margin-top: 12px;
+  }
+  .director .sectionInner {
+    display: block;
+  }
+  .portrait {
+    width: min(100%, 420px);
+  }
+  .directorLabel {
+    margin-top: 40px;
+  }
+  .faq .sectionInner {
+    grid-template-columns: 1fr;
+  }
+  .faqList {
+    margin-top: 48px;
+  }
+  .footer nav {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 599px) {
+  .mobileOnly {
+    display: initial;
+  }
+  .desktopOnly {
+    display: none;
+  }
+  .sectionInner {
+    padding-block: 56px;
+  }
+  .audience {
+    height: 1004px;
+  }
+  .audience .sectionInner,
+  .foster .sectionInner,
+  .season .sectionInner,
+  .faq .sectionInner,
+  .contact .sectionInner,
+  .footer .sectionInner {
+    height: 100%;
+    padding-block: 0;
+  }
+  .audienceHeading {
+    position: absolute;
+    top: 48px;
+    left: 0;
+    font-size: 2.125rem;
+    line-height: 1.294;
+  }
+  .audienceIntro {
+    position: absolute;
+    top: 172px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    font-size: 1.125rem;
+    line-height: 1.556;
+  }
+  .audienceList {
+    position: absolute;
+    top: 326px;
+    left: 0;
+    right: 0;
+    margin: 0;
+  }
+  .audienceList::before {
+    top: 0;
+    bottom: -24px;
+    left: 8px;
+  }
+  .audienceRow {
+    display: block;
+    height: 148px;
+    min-height: 0;
+    padding: 0 0 0 32px;
+    h3,
+    &:last-child h3 {
+      font-size: 1.75rem;
+      line-height: 1.286;
+    }
+    p {
+      margin-top: 16px;
+      font-size: 1.125rem;
+      line-height: 1.556;
+    }
+    &:not(:last-child)::after {
+      display: none;
+    }
+  }
+  .audienceNode {
+    top: 18px;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+  }
+
+  .foster {
+    height: 1084px;
+  }
+  .fosterLabel {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    font-size: 1rem;
+  }
+  .fosterHeading {
+    position: absolute;
+    top: 92px;
+    left: 0;
+    margin: 0;
+    font-size: 2.125rem;
+    line-height: 1.294;
+  }
+  .fosterFigure {
+    position: absolute;
+    top: 226px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+  }
+  .fosterFigure img {
+    height: 228px;
+    aspect-ratio: auto;
+  }
+  .fosterFigure figcaption {
+    margin-top: 16px;
+    font-size: 0.875rem;
+    line-height: 1.571;
+  }
+  .fosterLead {
+    position: absolute;
+    top: 548px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+  .fosterCopy {
+    position: absolute;
+    top: 744px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    font-size: 1.125rem;
+    line-height: 1.556;
+  }
+  .textLink {
+    position: absolute;
+    top: 944px;
+    left: 0;
+    margin: 0;
+    font-size: 1.125rem;
+  }
+
+  .activitiesHeading,
+  .mission h2,
+  .contact h2 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+  }
+  .activitiesHeading {
+    margin: 0;
+  }
+  .activityList {
+    margin-top: 64px;
+  }
+  .activity .activityNumber {
+    font-size: 3.5rem;
+  }
+  .activity h3 {
+    font-size: 1.75rem;
+  }
+  .activity p {
+    font-size: 1.125rem;
+  }
+
+  .season {
+    height: 676px;
+  }
+  .season h2 {
+    position: absolute;
+    top: 56px;
+    left: 0;
+    margin: 0;
+    font-size: 2.5rem;
+    line-height: 1.3;
+  }
+  .seasonLead {
+    position: absolute;
+    top: 224px;
+    left: 0;
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+  .seasonNote {
+    position: absolute;
+    top: 336px;
+    left: 0;
+    margin: 0;
+    font-size: 1.125rem;
+    line-height: 1.556;
+  }
+  .seasonMobileLines {
+    position: absolute;
+    top: 0;
+    left: calc((100% - 100vw) / 2);
+    display: block;
+    width: 100vw;
+    height: 100%;
+    fill: none;
+    pointer-events: none;
+    path {
+      stroke: var(--color-bg);
+      stroke-width: 2;
+      stroke-linecap: round;
+    }
+    circle {
+      fill: var(--color-bg);
+    }
+  }
+  .seasonAction {
+    position: absolute;
+    top: 548px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+  }
+
+  .missionLabel {
+    font-size: 1rem;
+  }
+  .mission h2 {
+    margin-top: 28px;
+    font-size: 2rem;
+  }
+  .missionCopy {
+    margin-top: 48px;
+    font-size: 1.125rem;
+    line-height: 1.556;
+  }
+  .director .sectionInner {
+    display: block;
+  }
+  .portrait {
+    width: 100%;
+    height: 430px;
+  }
+  .directorLabel {
+    margin-top: 48px;
+    font-size: 1rem;
+  }
+  .director h2 {
+    margin-top: 24px;
+    font-size: 2.25rem;
+    line-height: 1.278;
+  }
+  .director h2 br {
+    display: initial;
+  }
+  .directorLead {
+    font-size: 1.25rem;
+  }
+  .directorCopy {
+    font-size: 1.125rem;
+  }
+  .directorNote {
+    line-height: 1.571;
+  }
+  .results h2 {
+    font-size: 2.125rem;
+  }
+  .facts {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .facts strong,
+  .facts > div:nth-child(2) strong {
+    font-size: 3rem;
+  }
+  .facts p {
+    font-size: 1.125rem;
+  }
+
+  .faq {
+    min-height: 1056px;
+  }
+  .faq h2 {
+    position: absolute;
+    top: 48px;
+    left: 0;
+    font-size: 2.125rem;
+    line-height: 1.294;
+  }
+  .faqList {
+    position: absolute;
+    top: 204px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+  }
+  .faqList details {
+    min-height: 130px;
+    &:first-child {
+      min-height: 364px;
+    }
+    summary {
+      min-height: 130px;
+      padding: 24px 40px 20px 0;
+      font-size: 1.25rem;
+      line-height: 1.5;
+    }
+    &:first-child summary {
+      min-height: 118px;
+      font-size: 1.375rem;
+      line-height: 1.455;
+    }
+    p {
+      padding: 0 0 28px;
+      font-size: 1.125rem;
+      line-height: 1.556;
+    }
+  }
+  .faqIcon {
+    top: 30px;
+    right: 4px;
+  }
+  .faqNote {
+    margin-top: 16px;
+    line-height: 1.571;
+  }
+
+  .contact {
+    height: 564px;
+  }
+  .contact h2 {
+    position: absolute;
+    top: 48px;
+    left: 0;
+    margin: 0;
+  }
+  .contact > .sectionInner > p:not(.contactNote) {
+    position: absolute;
+    top: 204px;
+    left: 0;
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+  .contactMobileLines {
+    position: absolute;
+    top: 0;
+    left: calc((100% - 100vw) / 2);
+    display: block;
+    width: 100vw;
+    height: 100%;
+    fill: none;
+    pointer-events: none;
+    path {
+      stroke: var(--color-accent);
+      stroke-width: 2;
+      stroke-linecap: round;
+    }
+    circle {
+      fill: var(--color-accent);
+    }
+  }
+  .contactAction {
+    position: absolute;
+    top: 388px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+  }
+  .contactNote {
+    position: absolute;
+    top: 468px;
+    left: 0;
+    width: 240px;
+    margin: 0;
+    font-size: 0.875rem;
+    line-height: 1.571;
+  }
+  .footer {
+    height: 360px;
+  }
+  .footer .sectionInner {
+    display: block;
+  }
+  .footerBrand {
+    position: absolute;
+    top: 38px;
+    left: 0;
+    font-size: 2rem;
+    line-height: 1.313;
+  }
+  .organization {
+    position: absolute;
+    top: 106px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .footer nav {
+    position: absolute;
+    top: 208px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+  .footerAudience {
+    display: none;
+  }
+  .footerNote {
+    position: absolute;
+    top: 272px;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding-top: 0;
+    border: 0;
+    line-height: 1.571;
+  }
+}
+
+@media (max-width: 360px) {
+  .mission h2 {
+    font-size: 1.625rem;
+  }
+}

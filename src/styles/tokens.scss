@@ -1,18 +1,54 @@
 :root {
-  /* Bootstrap-only neutrals. Replace from approved Figma variables. */
-  --color-bg: #f4f4f2;
-  --color-surface: #ffffff;
-  --color-text: #1d1d1b;
-  --color-text-muted: #5f5f5a;
-  --color-border: #d9d9d4;
-  --color-focus: #3157a4;
+  --color-bg: #f7f5ef;
+  --color-surface: #f7f5ef;
+  --color-text: #203c32;
+  --color-text-muted: #59655d;
+  --color-accent: #9d442f;
+  --color-sage: #e3e9de;
+  --color-border: #b7c1b4;
+  --color-action: #203c32;
+  --color-on-action: #f7f5ef;
+  --color-action-hover: #142c23;
+  --color-action-pressed: #0c2119;
+  --color-disabled: #d6dbd2;
+  --color-focus: #9d442f;
 
-  --space-xs: 0.5rem;
-  --space-sm: 0.75rem;
-  --space-md: 1rem;
-  --space-lg: 1.5rem;
-  --space-xl: clamp(1.5rem, 5vw, 3rem);
-  --page-padding: clamp(1rem, 4vw, 3rem);
+  --font-display: 'Literata', Georgia, serif;
+  --font-body: 'Golos Text', Arial, sans-serif;
 
-  --radius-md: 0.75rem;
+  --space-0: 0;
+  --space-4: 0.25rem;
+  --space-8: 0.5rem;
+  --space-12: 0.75rem;
+  --space-16: 1rem;
+  --space-24: 1.5rem;
+  --space-32: 2rem;
+  --space-48: 3rem;
+  --space-64: 4rem;
+  --space-80: 5rem;
+  --space-96: 6rem;
+  --space-128: 8rem;
+
+  --page-padding: 5rem;
+  --content-width: 80rem;
+  --control-height: 3.5rem;
+  --radius-control: 2px;
+}
+
+@media (max-width: 1199px) {
+  :root {
+    --page-padding: 3rem;
+  }
+}
+
+@media (max-width: 899px) {
+  :root {
+    --page-padding: 2rem;
+  }
+}
+
+@media (max-width: 599px) {
+  :root {
+    --page-padding: 1.5rem;
+  }
 }

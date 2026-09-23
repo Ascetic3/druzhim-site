@@ -1,16 +1,35 @@
-import styles from './App.module.scss';
+import { Header } from '../sections/Header';
+import { Hero } from '../sections/Hero';
+import {
+  Activities,
+  Audience,
+  Contact,
+  Director,
+  Faq,
+  Footer,
+  FosterFamilies,
+  Mission,
+  Results,
+  Season,
+} from '../sections/HomeSections';
 
 export function App() {
   return (
-    <main className={styles.shell}>
-      <div className={styles.status}>
-        <p className={styles.eyebrow}>Техническая основа проекта</p>
-        <h1>ДРУЖИМ</h1>
-        <p>
-          Среда разработки готова. Визуальная концепция, контент и секции будут
-          определены на следующем этапе.
-        </p>
-      </div>
-    </main>
+    <>
+      <Header />
+      <main id="main">
+        <Hero />
+        <Audience />
+        <FosterFamilies />
+        <Activities />
+        <Season />
+        <Mission />
+        <Director />
+        <Results />
+        <Faq />
+        <Contact />
+      </main>
+      <Footer />
+    </>
   );
 }

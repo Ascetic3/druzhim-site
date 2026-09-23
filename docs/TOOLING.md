@@ -1,6 +1,6 @@
 # Tooling
 
-Last checked: 2026-09-22
+Last checked: 2026-09-23
 
 ## Local runtime
 
@@ -41,19 +41,27 @@ future agents should invoke it explicitly as `$frontend-app-builder` when the
 creative brief is provided. Codex detects new skills automatically; if it is not
 listed in a new task, restart Codex.
 
-Do not run the workflow before the creative brief is available.
+The original creative brief is preserved at `design/concept/BRIEF.txt`. The
+skill has been used for design exploration and the selected concept; do not
+repeat the three-direction exploration.
 
 ## Figma integration
 
-No Figma MCP tools are exposed to this task, so no authenticated read-only check
-was possible. The official Figma plugin was listed as available but not installed
-in the environment-provided catalog; the plugin suggestion endpoint did not make
-it eligible for installation from this task.
+The official Figma MCP integration is available and was used to create the
+[Druzhim concept file](https://www.figma.com/design/5rxBgN9AgG3vmrmD6eBM9m),
+its pages, 49 variables, 11 text styles and a foundations frame. A subsequent
+attempt to transfer the complete selected concept returned the Figma Starter
+MCP tool-call-limit message. No homepage or mobile frames were written in that
+attempt, and further MCP calls were stopped. The local SVG boards and compact
+`*-transfer.json` specifications preserve the design for a later transfer.
+The transfer data covers editable geometry and text; the still-life image must
+be placed separately. The last foundations screenshot predates a structural
+layout correction and is not a current QA image.
 
-Manual action: open the Codex/ChatGPT desktop **Plugins** directory, install the
-official **Figma** plugin, complete its connection/authentication prompt, then
-start a new Codex task. In the new task, verify the connection with a read-only
-request against an actual approved Figma file; do not create a random file.
+Browser login and MCP authentication are separate. The Figma file was not
+visually verified in the browser while logged out. When the tool allowance is
+available, inspect the existing file and transfer the saved boards rather than
+recreating the direction studies or generating new references.
 
 Official guidance:
 
@@ -74,8 +82,8 @@ npm run preview
 
 ## Git
 
-The workspace is a Git repository with no existing commits or configured remote
-at bootstrap time. No remote is created and no history is rewritten.
+The workspace is a Git repository. Bootstrap commit `fefe72e` exists; design
+work is currently uncommitted. No remote is configured by this design task.
 
 ## Bootstrap validation
 

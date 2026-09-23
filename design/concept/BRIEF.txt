@@ -1,0 +1,480 @@
+Use $frontend-app-builder and the installed Figma skills.
+
+Work autonomously. I am going away for a while, so do not stop for minor
+clarifications. Make reasonable design decisions from the brief and document
+them. Only stop if a genuine authentication/access blocker makes further work
+impossible.
+
+THIS TASK IS DESIGN ONLY.
+
+DO NOT implement the production React website.
+DO NOT start coding page sections.
+DO NOT replace the existing technical bootstrap.
+
+────────────────────────────────────
+0. FIRST: LOAD PROJECT CONTEXT
+────────────────────────────────────
+
+Read:
+
+- AGENTS.md
+- docs/PROJECT_STATE.md
+- docs/ARCHITECTURE.md
+- docs/DESIGN_SYSTEM.md
+- docs/MOTION.md
+- docs/DECISIONS.md
+- docs/CONTENT_TODO.md
+- docs/TOOLING.md
+
+Do not scan the entire repository unless actually necessary.
+
+Verify:
+
+- $frontend-app-builder is available;
+- Figma MCP works;
+- installed Figma skills are available.
+
+If the repository still has no initial bootstrap commit and the current changes
+are only the completed technical bootstrap from the previous task, create:
+
+chore: bootstrap React frontend
+
+Do not mix the design work into that bootstrap commit.
+
+────────────────────────────────────
+1. FIGMA
+────────────────────────────────────
+
+Create a new Figma design file named approximately:
+
+ДРУЖИМ — Website Concept
+
+Use Figma as the source of truth for the visual concept.
+
+Use the appropriate installed Figma skills for:
+- creating the file;
+- generating/editing design;
+- working with Figma MCP;
+- variables/tokens where useful.
+
+Do not create production React code in this task.
+
+────────────────────────────────────
+2. ORGANIZATION
+────────────────────────────────────
+
+Project:
+
+АНО «Центр социализации детей и молодежи "ДРУЖИМ"»
+
+Руководитель:
+Малышева Ирина Анатольевна.
+
+«ДРУЖИМ» — сообщество родителей и специалистов, объединивших опыт
+и знания для того, чтобы дети и молодежь успешно социализировались,
+развивали практические и социальные навыки и становились более
+самостоятельными и устойчивыми в будущем.
+
+Организация помогает:
+
+- детям;
+- молодежи;
+- семьям;
+- людям с особенностями развития.
+
+Особый акцент:
+
+- замещающие семьи;
+- опека;
+- приемные семьи;
+- усыновление;
+- дети и подростки, находящиеся в учреждениях;
+- выпускники детских учреждений.
+
+Миссия:
+
+Создавать безопасное и поддерживающее пространство, где дети,
+молодежь и семьи получают психологическую и социальную помощь,
+чтобы каждый мог раскрыть потенциал и уверенно строить будущее
+без барьеров и стереотипов.
+
+Цель:
+
+Комплексная социализация и развитие навыков у детей и молодежи
+для успешной интеграции в общество, укрепления семьи и создания
+условий, в которых дети растут в любящей и устойчивой среде.
+
+Руководитель приняла организацию в 2025 году.
+
+Сейчас открывается запись в группы второго сезона.
+
+Ирина Анатольевна также является приемным родителем.
+Сын находится в семье с возраста 5 месяцев, сейчас ему 15 лет.
+
+Эту историю использовать деликатно.
+Не использовать ребенка как инструмент эмоционального давления.
+
+────────────────────────────────────
+3. CENTRAL CREATIVE IDEA
+────────────────────────────────────
+
+The core visual metaphor is:
+
+CONNECTION BETWEEN PEOPLE.
+
+The name «ДРУЖИМ» should be visible in the visual language without
+literally illustrating people holding hands.
+
+Develop a recurring visual system based on:
+
+- lines;
+- paths;
+- nodes;
+- intersections;
+- trajectories;
+- separate paths gradually connecting;
+- relationships between elements;
+- subtle organic geometry.
+
+The underlying idea:
+
+a person does not exist alone;
+family, specialists, peers and community create a network of support.
+
+Do not explain this metaphor literally in copy.
+Make it visible through layout, graphics and motion.
+
+────────────────────────────────────
+4. CHARACTER
+────────────────────────────────────
+
+The website should feel:
+
+- contemporary;
+- humane;
+- calm;
+- intelligent;
+- visually distinctive;
+- trustworthy;
+- editorial;
+- mature;
+- emotionally strong without sentimentality.
+
+It must NOT look like:
+
+- a generic charity template;
+- a generic NGO landing page;
+- a SaaS startup;
+- a kindergarten website;
+- an AI-generated card grid.
+
+Avoid:
+
+- endless rounded cards;
+- glassmorphism everywhere;
+- generic gradient blobs;
+- standard headline-left / image-right hero;
+- random icon packs;
+- excessive rounded rectangles;
+- stereotypical charity blue;
+- puzzle-piece symbolism;
+- stock photos of unrealistically happy children;
+- sad-child emotional manipulation;
+- visual language based on pity;
+- repetitive fade-up animation.
+
+Use:
+
+- strong typography;
+- generous whitespace;
+- asymmetric editorial composition;
+- large-scale imagery where justified;
+- restrained colors;
+- deliberate visual rhythm;
+- a recognizable line/path motif.
+
+────────────────────────────────────
+5. DESIGN EXPLORATION
+────────────────────────────────────
+
+Before choosing one design, explore THREE genuinely different creative
+directions.
+
+They must differ in more than colors.
+
+For each direction establish:
+
+- overall composition;
+- typography;
+- palette;
+- line/node language;
+- photography treatment;
+- hero idea;
+- section rhythm;
+- motion character.
+
+Create enough visual material to understand each direction.
+
+Do not make three complete websites.
+Create strong representative frames / boards.
+
+Then compare the directions qualitatively against:
+
+- suitability for «ДРУЖИМ»;
+- trust;
+- readability;
+- distinctiveness;
+- ability to support the connection metaphor;
+- motion potential;
+- mobile adaptability;
+- risk of looking generic.
+
+Do not use numeric scores.
+
+Choose the direction with the strongest fit and explain why.
+
+────────────────────────────────────
+6. SELECTED CONCEPT — DEVELOP IT
+────────────────────────────────────
+
+After selecting the direction, develop it into a coherent homepage concept.
+
+Homepage architecture:
+
+1. Header
+2. Hero
+3. Кому мы помогаем
+4. Замещающие семьи / ключевое направление
+5. Что происходит в «ДРУЖИМ»
+6. Второй сезон / запись в группы
+7. Миссия
+8. Руководитель
+9. Результаты / факты
+10. FAQ
+11. Final contact CTA
+12. Footer
+
+You may adjust order if it improves storytelling.
+If you do, document the reason.
+
+Do NOT invent:
+
+- addresses;
+- telephone numbers;
+- statistics;
+- schedules;
+- prices;
+- specific programs;
+- participation rules;
+- legal details.
+
+Use clear placeholders/TODOs where data is unknown.
+
+────────────────────────────────────
+7. HERO
+────────────────────────────────────
+
+Hero must be distinctive.
+
+Explore concise Russian headline directions.
+
+Possible starting points only:
+
+«Чтобы рядом были люди»
+
+«Рядом. Пока не получится самому.»
+
+These are NOT approved final slogans.
+
+Find several alternatives before deciding.
+
+The visual connection system should begin in the hero.
+
+Potential motion concept:
+
+1. typography appears;
+2. a path begins drawing;
+3. connected elements appear;
+4. composition settles.
+
+No endless looping decorative animation.
+
+────────────────────────────────────
+8. FIGMA DELIVERABLES
+────────────────────────────────────
+
+For the selected concept create at minimum:
+
+DESKTOP:
+- full homepage concept at ~1440px;
+- coherent major-section sequence.
+
+MOBILE:
+- key homepage frames around 390px;
+- Hero;
+- audience/help section;
+- key foster-family section;
+- second-season CTA;
+- final CTA/navigation behavior.
+
+Also create/design:
+
+- palette;
+- typography;
+- basic spacing rhythm;
+- grid;
+- design tokens/variables where useful;
+- connection-line visual language;
+- button/link states;
+- image treatment;
+- mobile adaptation principles.
+
+The desktop design must not simply be scaled down for mobile.
+
+────────────────────────────────────
+9. MOTION CONCEPT
+────────────────────────────────────
+
+Follow docs/MOTION.md.
+
+Create useful motion annotations for implementation.
+
+Motion should communicate:
+
+connection,
+progression,
+relationships,
+paths meeting.
+
+Explore:
+
+- SVG line drawing;
+- clip/mask reveals;
+- typography sequences;
+- selective scroll-linked motion;
+- transitions between related sections.
+
+Do NOT animate everything.
+
+State how the concept changes under:
+
+prefers-reduced-motion: reduce
+
+State which effects should be simplified on mobile.
+
+Do not implement GSAP code yet.
+
+────────────────────────────────────
+10. ACCESSIBILITY
+────────────────────────────────────
+
+Keep the design compatible with:
+
+- WCAG AA contrast where applicable;
+- readable typography;
+- visible focus states;
+- keyboard interaction;
+- reduced motion;
+- clear hierarchy;
+- adequate touch targets.
+
+Accessibility is part of the visual concept, not a later patch.
+
+────────────────────────────────────
+11. CONTENT
+────────────────────────────────────
+
+Use the verified organization information above.
+
+Do not create fake factual content simply to fill layouts.
+
+Where information is missing, use neutral placeholders and update:
+
+docs/CONTENT_TODO.md
+
+with exactly what needs to be obtained from the organization later.
+
+────────────────────────────────────
+12. UPDATE PROJECT MEMORY
+────────────────────────────────────
+
+After the concept is developed, update as appropriate:
+
+docs/PROJECT_STATE.md
+docs/DESIGN_SYSTEM.md
+docs/MOTION.md
+docs/DECISIONS.md
+docs/CONTENT_TODO.md
+docs/TOOLING.md
+
+PROJECT_STATE.md should include:
+- Figma file/link;
+- chosen direction;
+- what has been designed;
+- what is still missing;
+- immediate next implementation task.
+
+DESIGN_SYSTEM.md should record the selected:
+- typography;
+- palette;
+- tokens;
+- spacing principles;
+- interaction states;
+- responsive principles.
+
+DECISIONS.md should contain only durable decisions, not a chronological log.
+
+────────────────────────────────────
+13. IMPORTANT AUTONOMY RULE
+────────────────────────────────────
+
+Do not stop after creating only a hero.
+
+Do not ask me to select between the three directions during this task.
+
+Explore all three, make a reasoned selection yourself, then develop the selected
+direction far enough that I can review the complete system when I return.
+
+This selection is provisional and can be changed after my review.
+
+If a specific detail is uncertain, choose a sensible provisional option and
+document it rather than stopping the whole task.
+
+If Figma authentication unexpectedly fails:
+- continue all non-Figma conceptual/documentation work possible;
+- clearly record the blocker;
+- do not start production React implementation as a workaround.
+
+────────────────────────────────────
+14. ABSOLUTE STOP CONDITION
+────────────────────────────────────
+
+DO NOT IMPLEMENT THE WEBSITE IN REACT YET.
+
+No production section components.
+No final SCSS.
+No GSAP implementation.
+
+The result of this task is the APPROVED-READY DESIGN CONCEPT,
+not the website implementation.
+
+────────────────────────────────────
+15. FINAL REPORT
+────────────────────────────────────
+
+When complete, report:
+
+- Figma file link;
+- three explored directions;
+- selected direction and reasoning;
+- frames/screens created;
+- typography;
+- palette;
+- connection-line visual system;
+- motion concept;
+- mobile concept;
+- unresolved content questions;
+- project docs updated;
+- exact recommended next task.
+
+Do not begin implementation after the report.

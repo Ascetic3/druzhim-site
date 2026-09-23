@@ -49,3 +49,19 @@ repository.
 
 **Consequences:** Git remains the detailed change history; documentation records
 state and non-obvious decisions, not every edit.
+
+## Selected homepage direction
+
+**Decision:** Continue only «Живая нить» as the provisional homepage concept.
+Use Literata, Golos Text, the paper/forest/clay/sage palette and a restrained
+connecting-line motif across desktop and mobile. Earlier direction studies are
+retained as historical references, not options to regenerate.
+
+**Reason:** One visual language connects the audiences, activities and
+second-season invitation while allowing factual content to be read without
+animation.
+
+**Consequences:** The local SVG boards are a reviewable design handoff while
+Figma canvas transfer is blocked. They do not constitute Figma approval or
+authorization to substitute invented program facts, statistics, contacts or
+photography.
