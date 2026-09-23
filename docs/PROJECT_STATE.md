@@ -6,15 +6,17 @@ Last updated: 2026-09-23
 
 The provisional «Живая нить» homepage is implemented in the existing React/Vite project from the local SVG concept. The local concept remains the active visual source until Figma is available for canvas transfer and approval.
 
-The project is configured for a GitHub Pages demo under `/druzhim-site/`.
-`.github/workflows/pages.yml` builds and deploys the Vite output from `master`.
-Public deployment status must be verified separately after the first push.
+The public GitHub Pages demo is at
+https://ascetic3.github.io/druzhim-site/. The repository is
+https://github.com/Ascetic3/druzhim-site, retaining the original bootstrap
+commit. `.github/workflows/pages.yml` validates, builds and deploys the Vite
+output from `master`. Vite uses `/druzhim-site/` as its asset base.
 
 ## Implemented homepage
 
 - Shared CSS custom properties now use the concept palette, spacing, typography and control values; Literata and Golos Text are self-hosted with licenses.
 - Header, hero, audience, foster families, activities placeholder, second-season CTA, mission, director, results placeholder, FAQ, final CTA and footer are implemented as semantic React sections with SCSS Modules.
-- Responsive layouts have been visually checked in the browser at 1440, 1024, 768 and 390 px. The 390 px view follows the seven local mobile compositions/states; intermediate layouts adapt content-first.
+- Responsive layouts have been visually checked in the browser at 1440, 1439, 1280, 1024, 768 and 390 px. The 390 px view follows the seven local mobile compositions/states; intermediate layouts adapt content-first.
 - Desktop hero SVG paths draw once with GSAP. Desktop foster photography reveals once and second-season paths converge on entry with ScrollTrigger. Mobile paths remain static, and reduced motion keeps final geometry visible. Menu and FAQ use short CSS state transitions.
 - Mobile navigation opens and closes with keyboard support and focus return; FAQ uses native `details/summary`. Internal section links work. The final contact control is deliberately disabled until a verified contact channel exists.
 - The illustrative foster-family still life is served as an optimized WebP reference, with a visible provisional caption. No unverified results, contacts, schedule or participation terms were introduced.

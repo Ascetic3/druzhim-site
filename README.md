@@ -3,13 +3,17 @@
 Production website project for АНО «Центр социализации детей и молодежи
 \"ДРУЖИМ\"».
 
-The current repository contains the technical bootstrap only. Production visual
-design, content, site sections, and motion have not been implemented.
+The homepage follows the provisional local «Живая нить» design concept. Its
+desktop and mobile design boards are in `design/concept/`; factual content and
+imagery still awaiting approval are labeled on the page and in
+`docs/CONTENT_TODO.md`.
+
+[View the GitHub Pages demo](https://ascetic3.github.io/druzhim-site/).
 
 ## Stack
 
-React, Vite, TypeScript, SCSS Modules, CSS custom-property tokens, and GSAP for
-future complex motion where justified.
+React, Vite, TypeScript, SCSS Modules, CSS custom-property tokens, and focused
+GSAP/ScrollTrigger motion.
 
 ## Setup and development
 
@@ -28,6 +32,13 @@ npm run build
 ```
 
 Use `npm run preview` to inspect the production build locally.
+
+## Demo deployment
+
+The Vite base is `/druzhim-site/`. A push to `master` runs
+`.github/workflows/pages.yml`, which validates, builds and deploys `dist` through
+GitHub Pages Actions. The source repository includes the earlier bootstrap
+commit and the design artifacts; generated `dist` is not committed.
 
 ## Folder map
 
